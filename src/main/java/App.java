@@ -9,7 +9,7 @@ public class App {
 
         Computer computer = appContext.getBean("comp", Computer.class);
         computer.turnOff();
-        computer = appContext.getBean("comp2", Computer.class);
+        computer = (Computer) appContext.getBean("comp2");
         computer.turnOff();
 
     }
